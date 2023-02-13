@@ -13,11 +13,12 @@ project "spdlog"
     }
 
     includedirs {
-        "include/**.h"
+        "include"
     }
 
 	defines {
-		"_CRT_SECURE_NO_WARNINGS"
+		"_CRT_SECURE_NO_WARNINGS",
+        "SPDLOG_COMPILED_LIB"
 	}
 
 	filter "system:windows"
